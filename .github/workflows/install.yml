@@ -38,7 +38,7 @@ jobs:
 
       - name: Modify install configuration
         run: |
-          dd if=/dev/zero of=virtual_disk.img bs=1M count=20480  # Create a 15GB disk image
+          dd if=/dev/zero of=virtual_disk.img bs=1M count=20480  # Create a 20GB disk image
           parted -s virtual_disk.img mklabel msdos
           parted -s virtual_disk.img mkpart primary ext4 1MiB 512MiB
           parted -s virtual_disk.img mkpart primary btrfs 512MiB 100%
