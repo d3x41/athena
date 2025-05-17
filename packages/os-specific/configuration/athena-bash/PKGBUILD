@@ -1,0 +1,17 @@
+pkgname=athena-bash
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Bash for Athena."
+arch=('any')
+license=("custom")
+depends=('bash' 'blesh' 'fastfetch' 'zoxide')
+source=(".bash_aliases"
+        ".blerc")
+
+package() {
+  install -dm 755 "${pkgdir}/etc/skel"
+
+  install -Dm 644 .bash_aliases "${pkgdir}/etc/skel/.bash_aliases"
+  install -Dm 644 .blerc "${pkgdir}/etc/skel/.blerc"
+}
+sha512sums=('ad5e71bf07f37bde6d7d31167f35dc5ff0aa93180b0864245ed7d47d43183a32e61fbd5bd3ca68c9a78c947b428efc30ec28a10e2782ccce7e2d4392140271ed')

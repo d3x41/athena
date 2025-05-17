@@ -1,5 +1,5 @@
 pkgname=athena-config
-pkgver=1.0.8
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="System configuration for Athena."
 arch=('any')
@@ -12,7 +12,6 @@ package() {
   install -dm 755 "${pkgdir}/usr/bin"
   install -dm 755 "${pkgdir}/etc/modprobe.d"
   install -dm 755 "${pkgdir}/etc/pacman.d/hooks"
-  install -dm 755 "${pkgdir}/etc/skel"
   install -dm 755 "${pkgdir}/etc/xdg/menus"
   install -dm 755 "${pkgdir}/usr/lib"
   install -dm 755 "${pkgdir}/usr/local/bin"
@@ -25,8 +24,6 @@ package() {
 
   cp -rf "${srcdir}"/etc/modprobe.d/* "${pkgdir}/etc/modprobe.d/"
   cp -rf "${srcdir}"/etc/pacman.d/hooks/* "${pkgdir}/etc/pacman.d/hooks/"
-  cp -rf "${srcdir}/etc/skel/.bash_aliases" "${pkgdir}/etc/skel/"
-  cp -rf "${srcdir}/etc/skel/.blerc" "${pkgdir}/etc/skel/"
   cp -rf "${srcdir}/etc/sudoers.d" "${pkgdir}/etc/"
   install -Dm644 "${srcdir}/etc/xdg/menus/blue-applications.menu" "${pkgdir}/etc/xdg/menus/"
   install -Dm644 "${srcdir}/etc/xdg/menus/red-applications.menu" "${pkgdir}/etc/xdg/menus/"
