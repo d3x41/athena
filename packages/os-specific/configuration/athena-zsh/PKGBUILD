@@ -4,7 +4,7 @@ pkgrel=1
 pkgdesc="Zsh for Athena."
 arch=('any')
 license=("custom")
-depends=('zsh' 'zsh-autosuggestions' 'zsh-history-substring-search' 'zsh-syntax-highlighting' 'powerline-fonts')
+depends=('fastfetch' 'zsh' 'zsh-autosuggestions' 'zsh-history-substring-search' 'zsh-syntax-highlighting' 'powerline-fonts')
 source=("shopt"
         ".zshrc")
 
