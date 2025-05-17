@@ -15,4 +15,5 @@ package() {
   install -Dm 644 "fish_prompt.fish" "${pkgdir}/etc/skel/.config/fish/functions/fish_prompt.fish"  
 }
 
-sha512sums=('7dbe85bab531e355f9a51c71bc97c9541c9c5c2fbde56967af16e4ac33f5f2f3997bb42b3addf30ddb205b0ad0e5b8c32971a50fc8d9adea4a5bc6dbcf1952bb')
+sha512sums=('bae8cb35607b23a2af7f4edc1021f3355b2032d235f4d3faeabccd3eaf8b4771677d0e4c8c4c0becd618d52f81711723ed90d866caa12699d6c1c14798162e35'
+            '2e14d85d40f74d58133163fc28931409dae6fef7b10f31df8e72e624b5291d0a0e76ae0cd26a8b84bd07a4b5b18c14abe654acb04d8272da84aa826e63bf75cb')

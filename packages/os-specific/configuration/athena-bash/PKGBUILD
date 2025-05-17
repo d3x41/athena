@@ -14,4 +14,5 @@ package() {
   install -Dm 644 .bash_aliases "${pkgdir}/etc/skel/.bash_aliases"
   install -Dm 644 .blerc "${pkgdir}/etc/skel/.blerc"
 }
-sha512sums=('ad5e71bf07f37bde6d7d31167f35dc5ff0aa93180b0864245ed7d47d43183a32e61fbd5bd3ca68c9a78c947b428efc30ec28a10e2782ccce7e2d4392140271ed')
+sha512sums=('23d6ad082ced1e3f279f8c0be7a6c204abacd23ec697d7e22b91610bf6448974456322b44a6079145d1f63137c2457ed678565d95703b7afaf6057980531967b'
+            '805ce7ef81f1c610542acea838859ef3df274bea4b2ba24906eb71418652eb0aa932951a2d714810a3ffe276a454dd608a89a4f79c6cac92dd91ca55bd6b2d45')
