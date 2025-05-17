@@ -236,7 +236,7 @@ buffer_clean(){
 }
 
 if [[ $1 != no-repeat-flag && -z $NO_REPETITION ]]; then
-  neofetch
+  fastfetch
 fi
 
 [[ $1 != no-repeat-flag && -f /usr/share/blesh/ble.sh ]] && source /usr/share/blesh/ble.sh
