@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="athenaos"
+iso_name="athena"
 iso_label="ATHENA-OS"
-iso_publisher="Athena OS <https://www.athenaos.org>"
-iso_application="Athena OS Live/Rescue CD"
+iso_publisher="Athena <https://www.athenaos.org>"
+iso_application="Athena Live/Rescue CD"
 iso_version="rolling"
 install_dir="arch"
 buildmodes=('iso')
