@@ -31,7 +31,7 @@ echo
 
         athenaVersion='rolling'
 
-        isoLabel='athena-'$athenaVersion'-x86_64.iso'
+        isoLabel='athenaos-'$athenaVersion'-x86_64.iso'
 
         # setting of the general parameters
         archisoRequiredVersion="archiso 77-1"
@@ -219,18 +219,18 @@ echo
         #Setting variables
 
         #profiledef.sh
-        oldname1='iso_name="athena"'
-        newname1='iso_name="athena"'
+        oldname1='iso_name="athenaos"'
+        newname1='iso_name="athenaos"'
 
-        oldname2='iso_label="athena"'
-        newname2='iso_label="athena"'
+        oldname2='iso_label="athenaos"'
+        newname2='iso_label="athenaos"'
 
         oldname3='Athena OS'
         newname3='Athena OS'
 
         #hostname
-        oldname4='Athena'
-        newname4='Athena'
+        oldname4='athenaos'
+        newname4='athenaos'
 
         #sddm.conf user-session
         oldname5='Session=gnome'
