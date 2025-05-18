@@ -179,7 +179,7 @@ set_bash_prompt() {
     line1+="\[\e[1;33m\][ $branch]\[\e[0m\]"
   fi
 
-  local line2="\[\e[1;32m\]╰─>$robot \[\e[1;36m\]$cwd \$\[\e[0m\]"
+  local line2="\[\e[1;32m\]╰─>$robot\[\e[1;36m\]$cwd \$\[\e[0m\]"
 
   PS1="${line1}\n${line2} "
 }
