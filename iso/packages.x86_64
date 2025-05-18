@@ -10,6 +10,7 @@ dhcpcd
 dialog
 edk2-shell
 efibootmgr
+glibc-locales
 grub
 inetutils
 intel-ucode
