@@ -238,11 +238,11 @@ echo
 
         echo "Changing all references"
         echo
-        sed -i 's/'$oldname1'/'$newname1'/g' $buildFolder/profiledef.sh
-        sed -i 's/'$oldname2'/'$newname2'/g' $buildFolder/profiledef.sh
-        sed -i 's/'$oldname3'/'$newname3'/g' $buildFolder/airootfs/etc/dev-rel
-        sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/airootfs/etc/hostname
-        #sed -i 's/'$oldname5'/'$newname5'/g' $buildFolder/airootfs/etc/sddm.conf
+        sed -i "s/'$oldname1'/'$newname1'/g" $buildFolder/profiledef.sh
+        sed -i "s/'$oldname2'/'$newname2'/g" $buildFolder/profiledef.sh
+        sed -i "s/'$oldname3'/'$newname3'/g" $buildFolder/airootfs/etc/dev-rel
+        sed -i "s/'$oldname4'/'$newname4'/g" $buildFolder/airootfs/etc/hostname
+        #sed -i "s/'$oldname5'/'$newname5'/g" $buildFolder/airootfs/etc/sddm.conf
 
         echo "Adding time to /etc/dev-rel"
         date_build=$(date -d now)
