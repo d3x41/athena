@@ -222,8 +222,8 @@ echo
         oldname1='iso_name="athenaos"'
         newname1='iso_name="athenaos"'
 
-        oldname2='iso_label="athenaos"'
-        newname2='iso_label="athenaos"'
+        oldname2='iso_label="ATHENA-OS"'
+        newname2='iso_label="ATHENA-OS"'
 
         oldname3='Athena OS'
         newname3='Athena OS'
@@ -233,8 +233,8 @@ echo
         newname4='athenaos'
 
         #sddm.conf user-session
-        oldname5='Session=gnome'
-        newname5='Session='$dmDesktop
+        #oldname5='Session=gnome'
+        #newname5='Session='$dmDesktop
 
         echo "Changing all references"
         echo
