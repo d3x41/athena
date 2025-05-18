@@ -23,6 +23,23 @@ fi
 chosen_design="${1,,}"
 detect_virt=$(systemd-detect-virt)
 
+is_package_installed() {
+    local package="$1"
+
+    if command -v rpm &>/dev/null; then
+        rpm -q "$package" &>/dev/null
+    elif command -v dpkg &>/dev/null; then
+        dpkg -l "$package" 2>/dev/null | grep -q "^ii"
+    elif command -v pacman &>/dev/null; then
+        pacman -Q "$package" &>/dev/null
+    elif command -v apk &>/dev/null; then
+        apk info -e "$package" &>/dev/null
+    else
+        echo "Unsupported package manager." >&2
+        return 2
+    fi
+}
+
 declare -A design_map=(
     ["cyborg"]="athena-cyborg-design"
     ["graphite"]="athena-graphite-design"
@@ -36,7 +53,7 @@ declare -A design_map=(
 # Auto-detect design based on installed package
 if [[ "$1" == "-a" || "$1" == "--auto" ]]; then
     for design in "${!design_map[@]}"; do
-        if rpm -q "${design_map[$design]}" &>/dev/null; then
+        if is_package_installed "${design_map[$design]}"; then
             chosen_design="$design"
             echo
             tput setaf 6
