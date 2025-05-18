@@ -1,6 +1,6 @@
 pkgname=athena-zsh
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Zsh for Athena."
 arch=('any')
 license=("custom")
@@ -16,4 +16,4 @@ package() {
   install -Dm 755 shopt "${pkgdir}/usr/bin/shopt"
 }
 sha512sums=('20ca77940719f5f2a80c236ee06d2c467a33c3cca817e8ad9c13c69a71441315fe561a4d9433b09d33ff59388b282b56e22848e2980972ad83bbb3e81f8e63cb'
-            'edaed31e5ee68bf09d02e4505e78a4ef17f6f0789675eb57a3df272395b6c2a49f89c6348595a2e047cce524aab6beae868a851cae43569af2af2887a37fcd1f')
+            '7c9177ccf961c39b182eb61007091c7b35e36bfa91cb44db13982e2cecf04b2894bfc0fd6b21c31130d4fa283a3b8dc6670423553c8e94504eb9b05823ddb2c5')

@@ -1,6 +1,6 @@
 pkgname=athena-fish
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Fish for Athena."
 arch=('any')
 license=("custom")
@@ -16,4 +16,4 @@ package() {
 }
 
 sha512sums=('0b8bc2cf49240c1425b4f56e6dc8b456690f8c62d32a0554464851efbde85f6d46a691a6092515b4c3ff1d452b9ca475f4b7ff1e615f7842c80e2c69193e4fe7'
-            '2e14d85d40f74d58133163fc28931409dae6fef7b10f31df8e72e624b5291d0a0e76ae0cd26a8b84bd07a4b5b18c14abe654acb04d8272da84aa826e63bf75cb')
+            'ea3560e2e377804d71ecc21da6d7265e8ee1728b7108b2e06f3d51ef1d9081d386c43fa4794d5fc6ca9403c97dfc1d55a1530d78c50b6d50051a69ae46c358ef')
