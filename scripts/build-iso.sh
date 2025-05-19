@@ -31,7 +31,7 @@ echo
 
         athenaVersion='rolling'
 
-        isoLabel='athena-'$athenaVersion'-x86_64.iso'
+        isoLabel='athenaos-'$athenaVersion'-x86_64.iso'
 
         # setting of the general parameters
         archisoRequiredVersion="archiso 83-1"
