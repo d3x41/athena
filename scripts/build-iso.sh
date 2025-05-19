@@ -219,18 +219,18 @@ echo
         #Setting variables
 
         #profiledef.sh
-        oldname1='iso_name="athenaos"'
-        newname1='iso_name="athenaos"'
+        #oldname1='iso_name="athenaos"'
+        #newname1='iso_name="athenaos"'
 
-        oldname2='iso_label="ATHENA-OS"'
-        newname2='iso_label="ATHENA-OS"'
+        #oldname2='iso_label="ATHENA-OS"'
+        #newname2='iso_label="ATHENA-OS"'
 
-        oldname3='Athena OS'
-        newname3='Athena OS'
+        #oldname3='Athena OS'
+        #newname3='Athena OS'
 
         #hostname
-        oldname4='athenaos'
-        newname4='athenaos'
+        #oldname4='athenaos'
+        #newname4='athenaos'
 
         #sddm.conf user-session
         #oldname5='Session=gnome'
